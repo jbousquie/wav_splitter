@@ -1,0 +1,8 @@
+[package]
+name = "wav_splitter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+symphonia = { version = "0.5.3", features = ["wav"] }
+riff = "1.0.1"
