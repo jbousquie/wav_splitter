@@ -63,7 +63,7 @@ fn main() -> io::Result<()> {
     let options = SplitOptions {
         input_path: Path::new("podcast.wav"),
         chunk_duration: minutes_to_duration(10), // 10 minute chunks
-        output_dir: Path::new("wav_chunks"),
+        output_dir: Path::new("audio_chunks"),
         prefix: "podcast_part",
     };
     
@@ -102,7 +102,7 @@ The splitter uses a multi-pass approach:
 
 ## Output
 
-All split files are saved in the wav_chunks directory with sequential numbering. The directory is created if it doesn't exist. Each file includes a proper WAV header with:
+All split files are saved in the audio_chunks directory with sequential numbering. The directory is created if it doesn't exist. Each file includes a proper WAV header with:
 
 - RIFF container format
 - WAV format chunk with correct audio parameters (sample rate, channels, bit depth)

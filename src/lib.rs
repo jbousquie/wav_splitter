@@ -7,7 +7,6 @@ use symphonia::core::io::{MediaSourceStream, ReadOnlySource};
 use symphonia::core::formats::FormatOptions;
 use symphonia::core::meta::MetadataOptions;
 use symphonia::core::probe::Hint;
-use symphonia::core::codecs::CodecParameters;
 
 /// Information about an audio chunk
 pub struct ChunkInfo {
